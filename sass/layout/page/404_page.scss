@@ -1,0 +1,49 @@
+.vk-page-404{
+    .left{
+        @media (min-width:$tablet_landscape_width) {
+            padding-right:180px;
+        }
+    }
+
+    .vk-img-frame{
+        margin-bottom:60px;
+    }
+    .vk-search-form{
+        @media (min-width:$tablet_portrait_width) {
+            width:500px;
+            margin:auto;
+        }
+        .form-group{
+            margin-bottom:20px;
+        }
+    }
+
+    .vk-buttons{
+        .vk-btn{
+            font-weight:500;
+            min-width:100%;
+            @media (min-width:$tablet_portrait_width) {
+                min-width:240px;
+            }
+            .fa{
+                padding-right:10px;
+            }
+            &-go-back{
+                margin-bottom:20px;
+                @media (min-width:$tablet_portrait_width) {
+                    margin-bottom:0;
+                    margin-right:15px;
+                }
+            }
+        }
+    }
+
+}
+.vk-btn-go-back{
+    background-color: $black-1;
+    &:hover,&:focus{
+        color:$black-1;
+        border-color: $black-1;
+        background-color: transparent;
+    }
+}

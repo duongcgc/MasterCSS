@@ -1,0 +1,175 @@
+.vk-toggle {
+    .panel-group {
+        margin-bottom: 0;
+        .panel {
+            border-radius: 0;
+            @include box-shadow-none();
+            + .panel {
+                margin-top: -1px;
+            }
+        }
+        .panel-default {
+            border-color: transparent;
+        }
+    }
+    //Panel tittle
+    .panel-title {
+        font-size: 16px;
+        position: relative;
+        a {
+            display: block;
+            padding: 15px;
+            font-weight: 400;
+        }
+        &:before {
+            content: "\f068";
+            color: $yellow-1;
+            font-family: FontAwesome;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+        a:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            color: $yellow-1;
+        }
+    }
+    //Panel heading
+    .panel-heading {
+        padding: 0;
+        background-color: transparent;
+    }
+    //Panel body
+    .panel-body {
+        padding: 25px 0;
+        p{
+            margin: 0;
+        }
+    }
+    //------- Toogle style -------//
+    //Toogle outlined
+    &.vk-toggle-outlined {
+        .panel-default {
+            border-color: $grey-4;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            .panel-heading {
+                border-left: solid 1px $grey-4;
+                border-right: solid 1px $grey-4;
+            }
+        }
+    }
+    //Toogle border
+    &.vk-toggle-border {
+        .panel-default {
+            border-color: $grey-4;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+        .panel-title {
+            a {
+                padding-left: 65px;
+                overflow: hidden;
+                position: relative;
+                &:before {
+                    content: "\f068";
+                    font-family: FontAwesome;
+                    color: $yellow-1;
+                    width: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                }
+                &.collapsed {
+                    &:before {
+                        content: "\f067";
+                    }
+                }
+            }
+        }
+        //Toogle border default
+        &.vk-toggle-border-default {
+            .panel-title {
+                &:before {
+                    width: 15px
+                }
+                a {
+                    padding-left: 40px;
+                    &:before {
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+    //Toogle simple
+    &.vk-toggle-default {
+        .panel-title {
+            background-color: $grey-5;
+            a {
+                padding-left: 65px;
+                overflow: hidden;
+                position: relative;
+                color: #333;
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $yellow-1;
+                }
+                &:before {
+                    content: "\f068";
+                    font-family: FontAwesome;
+                    color: $yellow-1;
+                    width: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                }
+                &.collapsed {
+                    &:before {
+                        content: "\f067";
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vk-faq-shortcode {
+    .left {
+        @media (min-width: $tablet_landscape_width) {
+            padding-right: 70px;
+        }
+    }
+    .vk-heading {
+        margin-bottom: 30px;
+        @media (min-width: $tablet_landscape_width) {
+            margin-bottom: 60px;
+        }
+    }
+    .vk-section {
+        padding-bottom: 0;
+        padding-top: 60px;
+        @media (min-width: $tablet_landscape_width) {
+            padding-top: 120px;
+        }
+        &.first {
+            padding-top: 0;
+        }
+    }
+}

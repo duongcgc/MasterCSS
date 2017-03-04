@@ -1,0 +1,134 @@
+.vk-iconbox{
+    padding:20px;
+    @include transition(0.3s);
+
+    @media (min-width:992px) {
+        width:auto;
+        padding:35px 25px;
+    }
+
+    .icon{
+        display: inline-block;
+        line-height: normal;
+        padding-bottom: 30px;
+        color:$yellow-1;
+        @include transition(0.3s);
+        .flaticon{
+            &:before{
+                font-size: 80px;
+            }
+        }
+    }
+    .vk-title{
+        margin-bottom:17px;
+        @include transition(0.3s);
+    }
+    .vk-text{
+        line-height: 26px;
+        margin-bottom: 0;
+        @include truncate-line(6);
+        @include transition(0.3s);
+    }
+    &:hover{
+        .icon{
+            color: $black-1;
+        }
+        .vk-title{
+            color: $yellow-1;
+        }
+    }
+
+    &-background{
+        margin-bottom:30px;
+        background-color: $black-1;
+        padding:40px 20px 30px 20px;
+        @media (min-width:992px) {
+            padding:50px 20px;
+        }
+        @media (min-width:1200px) {
+            padding:50px 25px;
+        }
+        .vk-title{
+            color:$white;
+        }
+        .vk-text{
+            color:$grey-1;
+        }
+        &:hover{
+            background-color: $yellow-1;
+            .icon{
+                color: $black-1;
+            }
+            .vk-title{
+                color:$black-1;
+            }
+            .vk-text{
+                color: $black-1;
+            }
+        }
+    }
+    &-striped{
+        background-color: $black-2;
+    }
+    &-border{
+        border:2px solid $black-1;
+        margin-bottom:30px;
+        padding:40px 20px 30px 20px;
+        @media (min-width:992px) {
+            padding:50px 25px;
+        }
+        &:hover{
+            background-color: $black-1;
+            .icon{
+                color: $yellow-1;
+            }
+            .vk-title{
+                color:$white;
+            }
+        }
+    }
+    &-fullwidth{
+        .vk-iconbox{
+            margin-bottom:0;
+        }
+    }
+}
+.vk-iconbox-fullwidth{
+    .h-line{
+        &:before,&:after{
+            border-color:$black-1;
+        }
+    }
+}
+.vk-iconbox-element{
+    .list-item{
+        padding-bottom:30px;
+        @media (min-width:992px) {
+            padding-bottom:90px;
+        }
+    }
+}
+.vk-iconbox-without-background{
+    .vk-space{
+        &.x-large{
+            padding-bottom:40px;
+            @media (min-width:992px) {
+                padding-top:90px;
+                padding-bottom:85px;
+            }
+        }
+    }
+    &.list-item{
+        padding-bottom:40px;
+        @media (min-width:992px) {
+            padding-bottom:85px;
+        }
+    }
+}
+.vk-iconbox-with-background{
+    &.list-item{
+        @media (min-width:992px) {
+            padding-bottom:0;
+        }
+    }
+}

@@ -1,0 +1,158 @@
+$border-color-dark-homepage: #787d81;
+.vk-home-dark{
+    color:$grey-1;
+    background-size: 100%;
+    .vk-heading{
+        color:$white;
+    }
+    .vk-project-grid-item{
+        .content-hidden{
+            background-color: $white;
+
+        }
+        .vk-title{
+            a{
+                color:$black-1;
+                &:hover,&:focus{
+                    color:$yellow-1;
+                }
+            }
+        }
+        .vk-list-action-post{
+            a,span{
+                color:$black-1;
+                &:hover,&:focus{
+                    color:$yellow-1;
+                }
+            }
+        }
+    }
+    .vk-filter{
+        border-color:$border-color-dark-homepage;
+        li{
+            &.active{
+                border-color:$border-color-dark-homepage;
+                border-bottom-color:#2f3a44;
+            }
+        }
+    }
+    .vk-slider-arrow-top{
+        .vk-arrow{
+            border-color:$border-color-dark-homepage;
+            &:hover,&:focus{
+                border-color:$yellow-1;
+            }
+
+        }
+    }
+    .vk-counter-section{
+        background-color: transparent;
+        border:1px solid $border-color-dark-homepage;
+        border-left:0;
+        border-right:0;
+    }
+    .vk-counter-non-icon{
+        background-color: transparent;
+
+        color: $yellow-1;
+        .number-count{
+            &:after{
+                background-color: $yellow-1;
+            }
+        }
+    }
+    .vk-recent-blog-section{
+        background-color: transparent;
+        border-bottom:1px solid $border-color-dark-homepage;
+    }
+    .vk-testimonial{
+        border-color:$border-color-dark-homepage;
+        .name{
+            color:$white;
+        }
+    }
+    .vk-slider-arrow-dot-top{
+        .vk-arrow-dots{
+            @media (min-width:$tablet_landscape_width){
+                top:-76px;
+            }
+            li{
+                &:after {
+                    background-color:$border-color-dark-homepage;
+                }
+                &.slick-active{
+                    &:after {
+                        background-color:$yellow-1;
+                    }
+                }
+            }
+        }
+    }
+    .vk-list-client-style-1{
+        li{
+            border-color: $border-color-dark-homepage;
+        }
+    }
+    .vk-heading-line{
+        > span {
+            &:before, &:after {
+                background-color: $white;
+            }
+        }
+    }
+    .vk-content-bot{
+        .vk-heading{
+            @media (min-width: $tablet_landscape_width) {
+                margin-left:60px;
+            }
+        }
+    }
+    .vk-join-our-team-section{
+        .vk-btn{
+            background-color: $yellow-1;
+            color: $black-1;
+            .icon{
+                background-color: $white;
+            }
+            &:hover,&:focus{
+                color:$white;
+                @include box-shadow-inset(0 0 0 2px $white);
+                background-color: transparent;
+            }
+        }
+    }
+    .vk-our-project-section{
+        .box-filter{
+            @media (min-width:$pc_width) {
+                top:-15px;
+            }
+        }
+    }
+    .vk-iconbox-section{
+        @media (min-width:$tablet_landscape_width) {
+            padding-top:120px;
+        }
+        .vk-heading{
+            @media (min-width:$tablet_landscape_width) {
+                margin-bottom:45px;
+            }
+        }
+        .vk-iconbox{
+            .vk-title{
+                color:$white;
+            }
+            &:hover{
+                .icon{
+                    color: $yellow-1;
+                }
+                .vk-title{
+                    color: $yellow-1;
+                }
+            }
+        }
+
+    }
+
+}
+
+

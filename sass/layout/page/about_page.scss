@@ -1,0 +1,53 @@
+.vk-page-about{
+    .vk-our-team{
+        padding:60px 0;
+        background-color: $grey-5;
+    }
+    .vk-content-bot{
+        padding:60px 0;
+        @media(min-width:992px){
+            padding:80px 0;
+        }
+
+    }
+    .vk-slider-arrow-top{
+        .vk-arrow{
+            top:-80px;
+        }
+    }
+
+}
+
+.vk-content-bot{
+    .left-content{
+        @media(min-width:992px){
+            padding-right:30px;
+        }
+    }
+    .right-content{
+        padding-top:55px;
+        @media(min-width:992px){
+            padding-left:30px;
+            padding-right:15px;
+            margin-left:0;
+            padding-top:0;
+        }
+    }
+    .vk-testimonial{
+        margin-bottom:0;
+        @media(min-width:992px){
+            padding-bottom:29px;
+        }
+        .content{
+            p{
+                @media(min-width:992px){
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 5;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+}

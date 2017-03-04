@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: WICON
+	Theme URI: https://themeforest.net/user/vikitheme
+	Description: Creative Professional Experience Premium Themes
+	Author: SemiColonWeb
+	Author URI: https://themeforest.net/user/vikitheme
+	Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------
+    BEGIN: COLOR
+-----------------------------------------------------------------------------------*/
+.vk-color-wrapper{
+    .vk-color{
+        padding: 20px ;
+        text-align: center;
+        margin-bottom: 30px;
+        color: white;
+    }
+    
+    $list-color:(
+            yellow-1:(color:#FFC000),
+            yellow-2:(color:#E5AC00),
+            black-1:(color:#2E3841),
+            black-2:(color:#2A333B),
+            green-1:(color:#9DC835),
+            green-2:(color:#87AC2D),
+            blue-1:(color:#3EC0A3),
+            blue-2:(color:#269C82),
+            turquoise-1:(color:#4C9ECD),
+            turquoise-2:(color:#2C7BA9),
+            violet-1:(color:#AA6BD2),
+            violet-2:(color:#8145A7),
+            grey-1:(color:#8D8D8D),
+            grey-2:(color:#B0B0B0),
+            grey-3:(color:#B3BDC7),
+            grey-4:(color:#EAEAEA),
+            grey-5:(color:#F4F4F4),
+        ); 
+        @each $name, $colors in $list-color {
+            .#{$name} {
+                background-color: map-get($colors, color);
+            }
+        }
+    
+    .grey-4,
+    .grey-5{
+        color: $black-1;
+    }
+}

@@ -1,0 +1,56 @@
+.tiny-banner{
+    background-image: url(../images/home-shop/banner.jpg);
+    height: 375px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    h2{
+        margin: 0;
+    }
+    h1{
+        font-size: 60px;
+        color: $yellow-1;
+        font-weight: 300;
+        margin: 25px 0;
+    }
+}
+.vk-client-shop-section{
+    background-color: $grey-4;
+    padding: 40px 0;
+}
+.vk-list-client-slider{
+    .vk-arrow{
+        font-size: 48px;
+        color:$grey-2;
+        background-color: transparent;
+        padding:0;
+        position:absolute;
+        top:0;
+        bottom:0;
+        z-index:1;
+        &.next{
+            right:0;
+        }
+    }
+}
+.vk-home-shop{
+    .vk-slider-arrow-dot-top {
+        .vk-arrow-dots{
+            @media (min-width: 992px){
+                top: -76px;
+            }
+        }
+        .vk-arrow{
+            @media (min-width: 992px){
+                top: -100px;
+            }
+        }
+    }
+    .vk-recent-blog-section{
+        background-color:$white;
+        @media (min-width: 992px){
+            padding-bottom:120px;
+        }
+    }
+
+}

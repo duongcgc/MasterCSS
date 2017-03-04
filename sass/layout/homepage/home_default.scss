@@ -1,0 +1,87 @@
+.vk-home{
+    .vk-heading{
+        margin-bottom:60px;
+    }
+    .vk-content-bot{
+        .left-content{
+            @media (min-width:$tablet_landscape_width) {
+                float:left;
+            }
+        }
+        .right-content{
+            padding-top:50px;
+            @media (min-width:$tablet_landscape_width) {
+                padding-top:0px;
+            }
+        }
+        .vk-testimonial{
+            .content{
+                padding-bottom:0px;
+            }
+        }
+    }
+    .vk-what-we-do-section{
+        .vk-heading{
+            margin-bottom:30px;
+            @media (min-width:$tablet_landscape_width) {
+                margin-bottom:60px;
+            }
+        }
+        .vk-filter{
+            li{
+                @media (min-width:$tablet_landscape_width) {
+                    padding: 14px 15px;
+                }
+                @media (min-width:$pc_width) {
+                    padding: 14px 23px;
+                }
+
+            }
+        }
+    }
+
+}
+
+.vk-our-project-section{
+    .box-filter{
+        position:absolute;
+        top:2px;
+        right:15px;
+        display: none;
+        @media (min-width:$tablet_landscape_width) {
+            display: block;
+
+        }
+        @media (min-width:$pc_width) {
+            right:200px;
+
+        }
+    }
+}
+.vk-work-step-mini{
+    padding-top:50px;
+    .vk-title{
+        margin-bottom:20px;
+        @media (min-width:$tablet_landscape_width) {
+            margin-bottom:30px;
+
+        }
+    }
+
+}
+.vk-recent-blog-section{
+    background-color: $grey-5;
+}
+.vk-counter-section{
+    background-color: $yellow-2;
+    padding-top:50px;
+    @media (min-width:$tablet_landscape_width) {
+        padding-top:0;
+    }
+}
+.vk-our-project-list{
+    .item{
+        width:100%;
+    }
+}
+

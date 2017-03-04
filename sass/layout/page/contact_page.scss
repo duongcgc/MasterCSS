@@ -1,0 +1,122 @@
+.vk-map{
+    padding-top:60px;
+    padding-bottom:60px;
+    @media (min-width:992px) {
+        padding-bottom:80px;
+    }
+}
+.vk-contact{
+    .vk-heading{
+        margin-bottom:20px;
+        line-height: 30px;
+        padding-bottom:0;
+        @media (min-width:992px) {
+            margin-bottom:40px;
+        }
+    }
+    .left-content{
+        @media (min-width:992px) {
+            padding-right:85px;
+        }
+    }
+    .right-content{
+        padding-top:45px;
+        @media (min-width:992px) {
+            padding:0;
+            margin-left:-15px;
+        }
+    }
+    &-form{
+        .vk-btn{
+            font-weight: 500;
+            .fa{
+                padding-right:12px;
+            }
+        }
+        background-color: $grey-5;
+        padding:30px 20px;
+        @media (min-width:992px) {
+            padding:30px 40px;
+        }
+        .form-control{
+            border-radius:0;
+            border-color:transparent;
+            @include box-shadow-none();
+            &:focus{
+                border-color:$yellow-1;
+            }
+        }
+        .form-group{
+            position:relative;
+            margin-bottom: 20px;
+        }
+        .user-info{
+            @media (min-width:992px) {
+                width:300px;
+                float: left;
+            }
+            .form-control{
+                min-height: 50px;
+                padding-left:55px;
+            }
+
+            .fa{
+                position:absolute;
+                color:$black-1;
+                font-size:22px;
+                left:20px;
+                top:13px;
+            }
+
+        }
+
+        .message-content{
+            @media (min-width:992px) {
+                width:calc(100% - 300px);
+                float: left;
+                padding-left:20px;
+            }
+            .form-control{
+                min-height: 260px;
+            }
+        }
+
+    }
+    .contact-info{
+        padding-bottom: 25px;
+        .vk-office{
+            border-color:#d7d7d7;
+            @media(min-width:992px){
+                li{
+                    &:last-child{
+                        padding-bottom:25px;
+                    }
+                }
+                &:last-child{
+                    padding-top:25px;
+                }
+            }
+
+        }
+    }
+    .business-hours{
+        .vk-office{
+            border-top:none;
+        }
+        .vk-heading{
+            margin-bottom:5px;
+        }
+    }
+
+
+}
+.vk-page-contact{
+    .vk-space{
+        &.x-medium{
+            padding:20px 0;
+            @media (min-width: 992px) {
+                padding:60px 0;
+            }
+        }
+    }
+}

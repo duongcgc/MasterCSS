@@ -1,0 +1,200 @@
+.vk-product-wrapper {
+    .box-shop{
+        padding-top:60px;
+        padding-bottom:30px;
+        @media (min-width: $tablet_landscape_width) {
+            padding-top:120px;
+            padding-bottom:90px;
+        }
+    }
+    .product-view {
+        .detail-product {
+            .intro {
+                padding-bottom: 35px;
+            }
+            .quantity {
+                width:100%;
+                margin-bottom:20px;
+                @media (min-width: $tablet_landscape_width) {
+                    width:auto;
+                    margin-bottom:0;
+                }
+                li {
+                    @include size(50px);
+                    * {
+                        @include size(100%);
+                        border: 1px solid $grey-4;
+                        border-radius: 0;
+                        outline: none;
+                        text-align: center;
+                    }
+                    .vk-btn {
+                        color: $grey-3;
+                        padding: 0;
+                        background-color: $grey-5;
+                    }
+                    &:not(:first-child) {
+                        margin-left: -1px;
+                    }
+                    &:first-child,
+                    &:last-child {
+                        background-color: $grey-5;
+                    }
+                }
+                .number {
+                    width: calc(100% - 100px);
+                    @media (min-width: $tablet_landscape_width) {
+                        width: 78px;
+                    }
+
+                }
+            }
+            .price {
+                p {
+                    font-size: 28px;
+                    color: $yellow-1;
+                    display: inline-block;
+                    padding: 10px 30px 20px 0;
+                }
+            }
+            .add-to-cart {
+                padding: 20px 0;
+                @media (min-width: $tablet_landscape_width) {
+                    display: flex;
+                }
+                .vk-btn-default {
+                    width:100%;
+                    @media (min-width: $tablet_landscape_width) {
+                        width:auto;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .info {
+                p {
+                    margin: 0;
+                    span {
+                        font-weight: 600;
+                    }
+                }
+                .share {
+                    ul {
+                        margin:0;
+                        li {
+                            padding-left: 0;
+                            padding-right:1px;
+                            a {
+                                background-color: $grey-5;
+                                display: flex;
+                                width: 50px;
+                                height: 50px;
+                                font-size: 22px;
+                                padding:14px 10px;
+                                i {
+                                    margin: auto;
+                                }
+                            }
+                            &:hover{
+                                a{
+                                    color:$white;
+                                }
+                            }
+                            &:nth-child(1){
+                                &:hover{
+                                    a{
+                                        background-color: #26558a;
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                &:hover{
+                                    a{
+                                        background-color: #1da0f2;
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                &:hover{
+                                    a{
+                                        background-color: #dc4a38;
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                &:hover{
+                                    a{
+                                        background-color: #ee1c1b;
+                                    }
+                                }
+                            }
+                            &:nth-child(5){
+                                &:hover{
+                                    a{
+                                        background-color: #bd081c;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .vk-slider-shop {
+            padding-bottom: 25px;
+            @media (min-width: $tablet_landscape_width) {
+                padding-bottom: 0;
+            }
+            img {
+                border: 1px solid $grey-4;
+            }
+            .slider-nav {
+                padding: 5px 15px;
+                @media (min-width: $tablet_landscape_width) {
+                    padding: 10px 15px;
+                }
+                .col-md {
+                    width: 20%;
+                    padding: 0 2.5px;
+                    @media (min-width: $tablet_landscape_width) {
+                        padding: 0 5px;
+                    }
+                }
+                .vk-arrow {
+                    background-color: $black-1;
+                    position:absolute;
+                    top: 0;
+                    bottom: 0;
+                   @include size(36px);
+                    padding: 0;
+                    margin:auto;
+                    z-index:10;
+                }
+                .vk-btn:hover {
+                    background-color: $yellow-1;
+                }
+                .next {
+                    right: 0;
+                }
+                .prev {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:960px) {
+    .vk-product-wrapper {
+        .product-view {
+            .vk-slider-shop {
+                .slider-nav {
+                    .col-md {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}

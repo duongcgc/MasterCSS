@@ -1,0 +1,14 @@
+.vk-page-faq{
+    .left{
+        @media (min-width: 992px) {
+            padding-right:85px;
+        }
+    }
+    .vk-toggle{
+        .panel{
+            &:last-child{
+                border-bottom:none;
+            }
+        }
+    }
+}

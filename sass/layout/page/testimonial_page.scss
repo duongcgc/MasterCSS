@@ -1,0 +1,60 @@
+.vk-testimonial{
+    padding:30px 30px 20px;
+    border:1px solid $grey-4;
+    margin-bottom: 30px;
+    @media (min-width:992px){
+        padding-bottom:25px;
+
+    }
+    .vk-img-frame{
+        @include size(80px);
+    }
+    .avatar{
+        display: flex;
+        align-items: flex-end;
+        padding-bottom:30px;
+    }
+    .profile{
+        padding-left: 17px;
+        padding-bottom: 2px;
+    }
+    .name{
+        color:$black-1;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: flex;
+    }
+    .position{
+        text-transform: capitalize;
+    }
+    .content{
+        @media (min-width:992px){
+            padding-left:45px;
+            position:relative;
+        }
+        .fa{
+            display: none;
+            @media (min-width:992px){
+                display: block;
+                position:absolute;
+                font-size: 30px;
+                left:0;
+            }
+        }
+        p{
+            margin-bottom:0;
+        }
+    }
+}
+.vk-page-testimonial{
+    padding:60px 0;
+    @media (min-width:992px){
+        //padding-bottom: 80px;
+    }
+    .vk-btn{
+        font-weight: 500;
+        .fa{
+            padding-left:8px;
+        }
+    }
+}

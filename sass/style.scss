@@ -1,0 +1,77 @@
+/*-----------------------------------------------------------------------------------
+Theme Name: WICON
+Author: Viki Team
+Author URI: http://www.vikitheme.com
+Version: 1.0.0
+Description: A Beautiful, Professional and Multipurpose Theme Made by Viki Team
+-----------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+[Table of contents]
+
+    - Base
+    - Elements
+    - Components
+        - Alert boxes
+        - Buttons
+        - Colors
+        - Counters
+        - Dividers
+        - FAQ
+        - Heading
+        - Icon boxes
+        - Icons
+        - Image sliders
+        - Pricing table
+        - Tabs
+    - Layout
+        - Blog
+            - Blog grid
+            - Blog list
+            - Single blog
+
+        - Header
+        - Homepage
+            - Home dark
+            - Home default
+            - Home shop
+        - Page
+            - 404
+            - About
+            - Career
+            - Contact
+            - FAQ
+            - Testimonial
+        - Project
+            - Project list
+            - Project grid
+            - Single project
+        - Service
+            - Construction
+            - Consultant
+            - Design
+            - Furniture
+        - Shop
+            - Shop
+            - Shopcart
+            - Shop checkout
+            - Single product
+        - Footer
+
+---------------------------------------------------------------- */
+
+
+@import "mixin";
+
+@import "variables/variables";
+
+/* BASE */
+@import "base";
+
+/* ELEMENTS */
+@import "elements";
+
+/* COMPONENTS */
+@import "components/components";
+
+/* LAYOUT */
+@import "layout/layout";

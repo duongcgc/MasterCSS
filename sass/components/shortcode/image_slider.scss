@@ -1,0 +1,177 @@
+//Overide slick slide
+.slick-slide {
+    &:focus {
+        outline: 0;
+    }
+}
+
+.vk-slider {
+    img {
+        @include transition(0.3s);
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .vk-arrow {
+        background-color: transparent;
+        border: 1px solid $grey-2;
+        color: $grey-2;
+        padding: 42px 14px;
+        position: absolute;
+        top: 28%;
+        z-index: 1;
+        &.next {
+            right: -70px;
+        }
+        &.prev {
+            left: -70px;
+        }
+        &:hover{
+            color: $yellow-1;
+            border-color: $yellow-1;
+        }
+    }
+    .vk-img-frame {
+        margin: 20px 0;
+        @media(min-width: 992px) {
+            margin: 35px 0;
+        }
+    }
+    .content {
+        opacity: 0;
+        text-align: center;
+        @include transition(0.3s);
+        .title {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $yellow-1;
+        }
+        .position {
+            text-transform: capitalize;
+            position: relative;
+            &:before {
+                content: '';
+                width: 40px;
+                height: 1px;
+                margin: 11px auto;
+                background-color: $grey-2;
+                display: block;
+            }
+        }
+    }
+    .item {
+        @include transition(0.3s);
+        &:hover {
+            .content {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &-center {
+        .vk-img-frame {
+            @media (min-width: 992px) {
+                margin-bottom: 60px;
+            }
+            overflow: visible;
+        }
+        .item {
+            padding: 0;
+            @media(min-width: 992px) {
+                padding:0 15px;
+            }
+            img {
+                @include transform(scale(1));
+                padding: 20px;
+                @media(min-width: 992px) {
+                    padding: 0;
+                }
+            }
+
+            ~ .item {
+                @media (min-width: 992px) {
+                    @include transform(translate(-35px));
+                }
+            }
+            &:hover {
+                .vk-img-frame{
+                    margin-bottom: 20px;
+                }
+            }
+            &.slick-slide {
+                &.slick-center {
+                    @include transform(translate(0));
+                    img {
+                        padding:0;
+                        @media (min-width: 992px) {
+                            @include transform(scale(1.241));
+                        }
+                    }
+                    .vk-img-frame{
+                        margin-bottom: 60px;
+                    }
+                    .content {
+                        opacity: 1;
+                    }
+
+                    + .item {
+                        @media (min-width: 992px) {
+                            @include transform(translate(35px));
+                        }
+                        + .item {
+                            @media (min-width: 992px) {
+                                @include transform(translate(35px));
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    &-circle {
+        .vk-img-frame {
+            @include border-radius(50%);
+            &:hover{
+                //@include transform(scale(1.1))
+            }
+        }
+
+    }
+}
+.vk-image-slider-element{
+    .vk-space{
+        &.x-large{
+            padding-bottom:40px;
+            @media (min-width: 992px) {
+                padding-bottom:85px;
+            }
+        }
+    }
+    .list-item{
+        padding-bottom: 60px;
+        @media (min-width: 992px) {
+            padding-bottom:120px;
+        }
+    }
+}
+.vk-image-slider-style-2{
+    .vk-heading{
+        color:#fff;
+    }
+}
+.vk-image-slider-style-1{
+    .vk-space{
+        &.x-large{
+            @media (min-width: 992px) {
+                padding-bottom:120px;
+            }
+        }
+    }
+}

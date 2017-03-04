@@ -1,0 +1,37 @@
+.vk-shop-checkout{
+    padding-top:60px;
+    @media(min-width:$tablet_landscape_width){
+        padding-top:80px;
+        padding-bottom:50px;
+    }
+    .vk-table-shopcart-style-1{
+        .button-cart{
+            .input-group{
+                width:auto;
+                margin-bottom:0;
+                padding-right:0;
+            }
+        }
+    }
+    .shop-table{
+        padding-bottom:60px;
+        @media(min-width:$tablet_landscape_width){
+            padding-bottom:70px;
+        }
+    }
+    .vk-shop-checkout-top{
+        .shop-table{
+            @media(min-width:$tablet_landscape_width){
+                padding-bottom:40px;
+            }
+        }
+    }
+    .vk-heading{
+        padding-bottom:25px;
+    }
+    .vk-shop-checkout-payment{
+        .vk-table-shopcart{
+            margin-bottom:20px;
+        }
+    }
+}

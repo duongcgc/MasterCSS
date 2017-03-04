@@ -1,0 +1,59 @@
+@mixin transition($timer){
+    -webkit-transition:all $timer ease-in-out;
+    -moz-transition:all $timer ease-in-out;
+    -o-transition:all $timer ease-in-out;
+    transition: all $timer ease-in-out;
+}
+@mixin box-shadow-none() {
+      -webkit-box-shadow:none;
+      -moz-box-shadow:none;
+      box-shadow:none;
+ }
+@mixin box-shadow-inset($data){
+    -webkit-box-shadow: inset $data;
+    -moz-box-shadow: inset $data;
+    box-shadow: inset $data;
+}
+@mixin box-shadow($data){
+    -webkit-box-shadow: $data;
+    -moz-box-shadow: $data;
+    box-shadow: $data;
+}
+
+@mixin clearfix(){
+    &:after{
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+@mixin size($size){
+   width:$size;
+   height:$size;
+}
+@mixin transform($data){
+    -webkit-transform: $data;
+    -moz-transform: $data;
+    -ms-transform: $data;
+    -o-transform: $data;
+    transform: $data;
+}
+@mixin border-radius($value){
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+@mixin truncate-line($number){
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:$number;
+
+}
+@mixin center(){
+   position:absolute;
+    top:50%;
+    left:50%;
+    @include transform(translate(-50%,-50%));
+}

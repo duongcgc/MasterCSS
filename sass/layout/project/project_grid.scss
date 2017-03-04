@@ -1,0 +1,76 @@
+
+.vk-project-grid-item {
+    margin-bottom: 30px;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    @media (min-width: $mobile_width) {
+        //width:$mobile_width;
+        //margin-left:auto;
+        //margin-right:auto;
+    }
+    @media (min-width: $tablet_landscape_width) {
+        width:auto;
+    }
+    .content-hidden {
+        display: flex;
+        background-color: $black-1;
+        min-height: 60px;
+        padding: 17px 15px;
+        position: absolute;
+        bottom: -60px;
+        right: 0;
+        left: 0;
+        z-index:1;
+        opacity: 0;
+        @include transition(0.3s);
+    }
+    .vk-title {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 0;
+        a {
+            color: $white;
+            &:hover,&:focus{
+                color:$yellow-1;
+            }
+        }
+    }
+    .vk-list-action-post {
+        display: inline-flex;
+        margin-left: auto;
+
+        li {
+            padding-left: 15px;
+            font-size: 18px;
+            &:first-child {
+                padding-left: 0;
+            }
+
+        }
+    }
+    &:hover {
+        .content-hidden {
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+}
+
+.vk-page-project-grid {
+    .box-filter {
+        padding-bottom: 60px;
+        @media (min-width: 992px) {
+            padding-bottom: 120px;
+        }
+    }
+    .vk-buttons {
+        @media (min-width: 992px) {
+            padding-top: 30px;
+        }
+        .vk-btn-readmore {
+            padding: 0 15px;
+        }
+    }
+}
+

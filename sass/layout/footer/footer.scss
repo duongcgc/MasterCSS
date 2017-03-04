@@ -1,0 +1,128 @@
+.vk-social-link {
+    padding-top: 8px;
+    li {
+        display: inline-block;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        a {
+            @include size(30px);
+            border: 2px solid;
+            @include border-radius(50%);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+}
+
+.vk-quick-link {
+    li {
+        padding-bottom:15px;
+        a {
+            &:before {
+                content: '\f105';
+                padding-right: 8px;
+                font-family: FontAwesome;
+            }
+        }
+    }
+}
+
+.vk-office{
+    li{
+        position:relative;
+        padding-left:28px;
+        padding-bottom:15px;
+        .fa{
+            font-size: 18px;
+            position:absolute;
+            left:0;
+            top:1px;
+            color:$yellow-1;
+        }
+    }
+    &:last-child{
+        border-top:1px solid $grey-7;
+        padding-top:15px;
+    }
+}
+.vk-latest-news{
+    li{
+        width:calc(100% /3);
+        display: inline;
+        float:left;
+        padding-bottom:1px;
+        &:not(:nth-child(3n)){
+            padding-right:1px;
+        }
+        .vk-img{
+            overflow: hidden;
+        }
+        img{
+            width:100%;
+            @media(min-width:992px){
+                width:auto;
+            }
+        }
+
+    }
+}
+
+.vk-footer {
+    padding-top:60px;
+    background-color: $black-1;
+    color: $grey-6;
+    @media(min-width:992px){
+        padding-top:80px;
+    }
+    .vk-heading {
+        padding-bottom: 25px;
+        color: $white;
+        margin-bottom:0;
+        @media(min-width:992px){
+            padding-bottom: 30px;
+        }
+    }
+    .vk-divider{
+        border-color: $grey-7;
+    }
+    .footer-item{
+        padding-bottom:60px;
+        @media(min-width:992px){
+            padding-bottom:80px;
+        }
+    }
+    .quick-link{
+        @media(min-width:992px){
+            margin-left:-15px;
+            padding-left: calc(1200px / 12 - 15px);
+        }
+    }
+    .office{
+        @media(min-width:992px){
+            padding-left:0 ;
+            padding-right: calc(1200px / 12 - 30px);
+        }
+    }
+    .latest-works{
+        @include clearfix;
+        @media(min-width:992px){
+            padding-left:0;
+            padding-right:0;
+        }
+    }
+
+}
+.footer-bot{
+    background-color: $black-2;
+    text-align: center;
+    padding: 23px 0;
+    @media(min-width:992px){
+        padding: 27px 0;
+    }
+    .vk-text{
+        margin-bottom:0;
+        display:inline-block;
+    }
+}

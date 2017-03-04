@@ -1,0 +1,554 @@
+//Height size
+$xs: 36px;
+$s: 40px;
+$m: 44px;
+$l: 50px;
+$xl: 56px;
+
+.vk-btn {
+    outline: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #aaa;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 2px solid transparent;
+    min-height: $m;
+    @include transition(0.3s);
+
+    &-default {
+        background-color: $yellow-1;
+
+        &:hover, &:focus {
+            background-color: transparent;
+            color: $yellow-1;
+            border-color: $yellow-1;
+        }
+    }
+    &-xs {
+        min-height: $xs;
+        font-size: 12px;
+        padding:8px 20px;
+    }
+    &-s {
+        min-height: $s;
+        font-size: 12px;
+        padding: 9.5px 20px;
+    }
+    &-m {
+        //min-height: $m;
+    }
+    &-l {
+        min-height: $l;
+        padding: 13px 20px;
+    }
+    &-xl {
+        min-height: $xl;
+        font-size: 18px;
+        padding: 13.5px 20px;
+    }
+
+    &-transparent {
+        background-color: transparent;
+        color: $yellow-1;
+        &:hover, &:focus {
+            color: $black-1;
+        }
+    }
+
+    &-green {
+        background-color: $green-1;
+        &:hover, &:focus {
+            background-color: transparent;
+            color: $green-1;
+            border-color: $green-1;
+        }
+    }
+    &-turquoise {
+        background-color: $turquoise-1;
+        &:hover, &:focus {
+            background-color: transparent;
+            color: $turquoise-1;
+            border-color: $turquoise-1;
+        }
+    }
+    &-blue {
+        background-color: $blue-1;
+        &:hover, &:focus {
+            background-color: transparent;
+            color: $blue-1;
+            border-color: $blue-1;
+        }
+    }
+    &-violet {
+        background-color: $violet-1;
+        &:hover, &:focus {
+            background-color: transparent;
+            color: $violet-1;
+            border-color: $violet-1;
+        }
+    }
+
+    .title {
+        position: relative;
+        z-index: 1;
+        font-weight: 500;
+    }
+    &-inverse{
+       background-color: $black-1;
+        &:hover,&:focus{
+            background-color: $yellow-1;
+            color:$white;
+        }
+    }
+}
+
+.vk-border {
+    &-radius {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    &-yellow {
+        border: 2px solid $yellow-1;
+        color: $yellow-1;
+        &:hover, &:focus {
+            background-color: $yellow-1;
+            color:$white;
+            border-color: transparent;
+        }
+    }
+    &-green {
+        border: 2px solid $green-1;
+        color: $green-1;
+        &:hover, &:focus {
+            background-color: $green-1;
+            color:$white;
+            border-color: transparent;
+        }
+    }
+    &-turquoise {
+        border: 2px solid $turquoise-1;
+        color: $turquoise-1;
+        &:hover, &:focus {
+            background-color: $turquoise-1;
+            color:$white;
+            border-color: transparent;
+        }
+    }
+    &-blue {
+        border: 2px solid $blue-1;
+        color: $blue-1;
+        &:hover, &:focus {
+            background-color: $blue-1;
+            color:$white;
+            border-color: transparent;
+        }
+    }
+    &-violet {
+        border: 2px solid $violet-1;
+        color: $violet-1;
+        &:hover, &:focus {
+            background-color: $violet-1;
+            color:$white;
+            border-color: transparent;
+        }
+    }
+
+    &-bottom {
+        border: none;
+        padding:12px 20px;
+        &:after {
+            content: '';
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @include transition(0.3s);
+        }
+        &.vk-btn {
+            &-default {
+                &:after {
+                    background-color: $yellow-2;
+                }
+            }
+            &-green {
+                &:after {
+                    background-color: $green-2;
+                }
+            }
+            &-turquoise {
+                &:after {
+                    background-color: $turquoise-2;
+                }
+            }
+            &-blue {
+                &:after {
+                    background-color: $blue-2;
+                }
+            }
+            &-violet {
+                &:after {
+                    background-color: $violet-2;
+                }
+            }
+            &-xs{
+                padding-top:9.5px;
+                padding-bottom:9.5px;
+            }
+            &-s{
+                padding-top:11.5px;
+                padding-bottom:11.5px;
+            }
+            &-l{
+                padding-top:15px;
+                padding-bottom:15px;
+            }
+            &-xl{
+                padding-top:15.5px;
+                padding-bottom:15.5px;
+            }
+        }
+        &:hover, &:focus {
+            color: $white;
+            &:after {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.vk-btn-icon {
+    padding-right: 70px;
+    background-color: $black-1;
+    overflow: hidden;
+    border: none;
+    padding-top:12px;
+    padding-bottom:12px;
+    .icon {
+        padding-top:12px;
+        padding-bottom:12px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: inherit;
+        min-width: 50px;
+        font-size: 18px;
+        color: $white;
+        @include transition(0.3s);
+        .fa {
+            z-index: 1;
+        }
+    }
+    &.vk-btn {
+        &-default {
+            .icon {
+                background-color: $yellow-1;
+            }
+            &:hover, &:focus {
+                @include box-shadow-inset(0px 0px 0px 2px $yellow-1);
+            }
+        }
+        &-green {
+            .icon {
+                background-color: $green-1;
+            }
+            &:hover, &:focus {
+                @include box-shadow-inset(0px 0px 0px 2px $green-1);
+            }
+        }
+        &-turquoise {
+            .icon {
+                background-color: $turquoise-1;
+            }
+            &:hover, &:focus {
+                @include box-shadow-inset(0px 0px 0px 2px $turquoise-1);
+            }
+        }
+        &-blue {
+            .icon {
+                background-color: $blue-1;
+            }
+            &:hover, &:focus {
+                @include box-shadow-inset(0px 0px 0px 2px $blue-1);
+            }
+        }
+        &-violet {
+            .icon {
+                background-color: $violet-1;
+            }
+            &:hover, &:focus {
+                @include box-shadow-inset(0px 0px 0px 2px $violet-1);
+            }
+        }
+        &-transparent {
+            background-color: transparent;
+            .icon {
+                border-left: 2px solid;
+            }
+        }
+        &-xs{
+            padding-top:9.5px;
+            padding-bottom:9.5px;
+            .icon{
+                padding-top:8.5px;
+                padding-bottom:8.5px;
+            }
+        }
+        &-s{
+            padding-top:11.5px;
+            padding-bottom:11.5px;
+            .icon{
+                padding-top:10.5px;
+                padding-bottom:10.5px;
+            }
+        }
+        &-l{
+            padding-top:15px;
+            padding-bottom:15px;
+            .icon{
+                padding-top:16px;
+                padding-bottom:16px;
+            }
+        }
+        &-xl{
+            padding-top:15.5px;
+            padding-bottom:15.5px;
+            .icon{
+                padding-top:16.5px;
+                padding-bottom:16.5px;
+            }
+        }
+    }
+    &.vk-border {
+        &-yellow {
+            border: 2px solid $yellow-1;
+            color: $yellow-1;
+            .icon {
+                color: $yellow-1;
+            }
+            &:hover, &:focus {
+                .icon {
+                    background-color: $yellow-1;
+                    color: $white;
+                    border-color: $yellow-1;
+                }
+            }
+        }
+        &-green {
+            border: 2px solid $green-1;
+            color: $green-1;
+            .icon {
+                color: $green-1;
+            }
+            &:hover, &:focus {
+                .icon {
+                    background-color: $green-1;
+                    color: $white;
+                    border-color: $green-1;
+                }
+            }
+        }
+        &-turquoise {
+            border: 2px solid $turquoise-1;
+            color: $turquoise-1;
+            .icon {
+                color: $turquoise-1;
+            }
+            &:hover, &:focus {
+                .icon {
+                    background-color: $turquoise-1;
+                    color: $white;
+                    border-color: $turquoise-1;
+                }
+            }
+        }
+        &-blue {
+            border: 2px solid $blue-1;
+            color: $blue-1;
+            .icon {
+                color: $blue-1;
+            }
+            &:hover, &:focus {
+                .icon {
+                    background-color: $blue-1;
+                    color: $white;
+                    border-color: $blue-1;
+                }
+            }
+        }
+        &-violet {
+            border: 2px solid $violet-1;
+            color: $violet-1;
+            .icon {
+                color: $violet-1;
+
+            }
+            &:hover, &:focus {
+                .icon {
+                    background-color: $violet-1;
+                    color: $white;
+                    border-color: $violet-1;
+                }
+            }
+        }
+
+        &-bottom {
+            border: none;
+            &:after {
+                content: '';
+                width: 100%;
+                height: 5px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                @include transition(0.3s);
+            }
+            &.vk-btn {
+                &-default {
+                    &:after {
+                        background-color: $yellow-2;
+                    }
+                }
+                &-green {
+                    &:after {
+                        background-color: $green-2;
+                    }
+                }
+                &-turquoise {
+                    &:after {
+                        background-color: $turquoise-2;
+                    }
+                }
+                &-blue {
+                    &:after {
+                        background-color: $blue-2;
+                    }
+                }
+                &-violet {
+                    &:after {
+                        background-color: $violet-2;
+                    }
+                }
+            }
+            &:hover, &:focus {
+                color: $white;
+                &:after {
+                    height: 100%;
+                }
+            }
+        }
+
+        &-bottom {
+            &.vk-btn {
+                &-default {
+                    background-color: $yellow-1;
+
+                }
+                &-green {
+                    background-color: $green-1;
+
+                }
+                &-turquoise {
+                    background-color: $turquoise-1;
+
+                }
+                &-blue {
+                    background-color: $blue-1;
+
+                }
+                &-violet {
+                    background-color: $violet-1;
+
+                }
+            }
+            .icon {
+                &:before {
+                    content: '';
+                    height: 100%;
+                    width: 1px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+button{
+    &.vk-btn{
+        display: inline-block;
+    }
+}
+.vk-button-element {
+    .vk-divider {
+        border-color: #d7d7d7;
+    }
+    .vk-btn {
+        width: 100%;
+        margin-bottom: 20px;
+        @media (min-width: 992px) {
+            margin: 40px 0;
+        }
+
+    }
+    .heading {
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+        padding: 30px 0;
+        @media (min-width: 992px) {
+            text-align: left;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+    }
+    .wrapper {
+        padding-bottom: 10px;
+        @media (min-width: 992px) {
+            padding-bottom: 0;
+        }
+        .content {
+            @media (min-width: 992px) {
+                display: flex;
+                align-items: flex-end;
+            }
+
+        }
+    }
+    .even {
+        background-color: $grey-5;
+    }
+    .button-wrapper {
+        padding: 50px 0px;
+        @media (min-width: 992px) {
+            padding: 100px 0px;
+        }
+    }
+    .vk-space {
+        &.x-large {
+            padding-bottom: 30px;
+            @media (min-width: 992px) {
+                padding-bottom: 80px;
+            }
+        }
+    }
+    .list-item {
+        padding-bottom: 40px;
+        @media (min-width: 992px) {
+            padding-bottom: 80px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.vk-blog-list{
+    .blog-content{
+        .vk-divider{
+            margin-bottom: 50px;
+        }
+        .content-box{
+            .content{
+                p{
+                    padding: 0 !important;
+                }
+            }
+            .vk-buttons{
+                padding-top:25px;
+                padding-bottom:30px;
+            }
+        }
+        .customer{
+            h1{
+                padding-top: 10px;
+                color: $yellow-1;
+            }
+            h4{
+                padding: 0 ;
+                line-height: 2;
+            }
+        }
+        .vk-pagination{
+            border: none;
+            padding-top: 5px;
+            margin-top: -30px;
+            
+        }
+        .box-pagination{
+            text-align: center;
+            @media (min-width: $tablet_landscape_width) {
+                text-align: right;
+            }
+        }
+        
+    }
+
+}

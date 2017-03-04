@@ -1,0 +1,43 @@
+.vk-blog-grid {
+    &.vk-blog-wrapper{
+        .blog-list{
+            padding-bottom:60px;
+            @media (min-width: $tablet_landscape_width) {
+                padding-bottom:80px;
+            }
+
+        }
+    }
+
+    .blog-content {
+        .content-box {
+            margin-bottom: 30px;
+            a{
+                h4 {
+                    padding-top:25px;
+                    padding-bottom:20px;
+                    margin:0;
+                    color: $black-1;
+                }
+            }
+            .vk-divider{
+                padding-bottom: 25px;
+            }
+            .content {
+                padding:0 30px 0 30px;
+                background-color: $grey-5;
+                h4:hover{
+                    color: $yellow-1;
+                }
+                .vk-buttons{
+                    padding-bottom: 25px;
+                }
+                h5{
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+//------- Side bar menu -------//

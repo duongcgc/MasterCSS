@@ -1,0 +1,18 @@
+.vk-page-service{
+    .vk-work-process{
+        padding-bottom: 60px;
+        border-bottom:1px solid $grey-4;
+        @media (min-width:992px){
+            padding-top: 60px;
+            border-top:1px solid $grey-4;
+        }
+    }
+    .vk-pricing-table{
+        .vk-heading{
+            margin-bottom:45px;
+            @media (min-width: 992px) {
+                margin-bottom:100px;
+            }
+        }
+    }
+}

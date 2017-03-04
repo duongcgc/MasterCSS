@@ -1,0 +1,38 @@
+.vk-page-career{
+    .content-top{
+        padding-bottom:40px;
+        @media (min-width: $tablet_landscape_width) {
+            padding-bottom:20px;
+        }
+    }
+    .content-mid{
+        .vk-title{
+            margin-bottom:0;
+            padding:17px 17px 17px 19px;
+            background: #f4f4f4;
+            background: -moz-linear-gradient(left,  $grey-5 0%, $white 100%);
+            background: -webkit-linear-gradient(left,   $grey-5 0%,$white 100%);
+            background: linear-gradient(to right,   $grey-5 0%,$white 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grey-5', endColorstr='$white',GradientType=1 );
+        }
+    }
+    .vk-list-icon{
+        padding-bottom:60px;
+    }
+    .left{
+        @media (min-width:992px){
+            padding-right:85px;
+        }
+
+    }
+    .vk-contact-form{
+        padding-top:25px;
+        .vk-heading{
+            padding-bottom:15px;
+
+        }
+        .vk-divider{
+            margin-bottom:30px;
+        }
+    }
+}
