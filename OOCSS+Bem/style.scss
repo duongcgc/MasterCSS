@@ -1,0 +1,47 @@
+/* Scss Document */
+
+// Mixins 
+
+@mixin e($element){
+	&__#{$element}{
+		@content;
+	}
+}
+
+@mixin m($modifier){
+	&--#{$modifier}{
+		@content;
+	}
+}
+
+@mixin bem($e,$m){
+	
+	font-size: 12px;
+   	@include e($e){
+		font-size: 13px;
+		@include m($m){
+			font-weight: bold;
+		}
+	}
+
+}
+
+%common{
+	font-size: 14px;
+	text-decoration: none;
+}
+
+// Using 
+.menu{
+	@extend %common;		
+	@include bem('item','actived');
+}
+
+.nav{
+	display: inline-block;
+	@extend %common;	
+	@include bem('child','current');
+}
+
+
+

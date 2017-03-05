@@ -1,0 +1,23 @@
+/* Scss Document */
+.box1, .box2, .box3, .box4 {
+  width: 25%;
+  height: 150px;
+  float: left;
+}
+
+/* Using object %box */
+.box1 {
+  background: red;
+}
+
+.box2 {
+  background: blue;
+}
+
+.box3 {
+  background: green;
+}
+
+.box4 {
+  background: black;
+}

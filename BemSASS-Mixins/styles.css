@@ -1,0 +1,14 @@
+/* Scss Document */
+.menu {
+  font-size: 14px;
+}
+.menu__item {
+  font-size: 16px;
+}
+.menu__item--gray {
+  font-size: 18px;
+  color: gray;
+}
+.menu__item--fixed {
+  font-size: 32px;
+}

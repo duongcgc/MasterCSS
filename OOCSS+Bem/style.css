@@ -1,0 +1,26 @@
+/* Scss Document */
+.menu, .nav {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu {
+  font-size: 12px;
+}
+.menu__item {
+  font-size: 13px;
+}
+.menu__item--actived {
+  font-weight: bold;
+}
+
+.nav {
+  display: inline-block;
+  font-size: 12px;
+}
+.nav__child {
+  font-size: 13px;
+}
+.nav__child--current {
+  font-weight: bold;
+}

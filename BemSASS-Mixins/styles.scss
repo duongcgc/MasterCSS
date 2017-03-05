@@ -1,0 +1,30 @@
+/* Scss Document */
+
+/// @alias element
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+/// @alias modifier
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+/// Rewriting our previous example with our brand new mixins alias
+.menu {
+    
+	font-size: 14px;
+
+    @include e('item') {
+        font-size: 16px;
+		@include m('gray'){
+			font-size: 18px;
+			color: gray;
+		}
+		@include m('fixed') {
+        	font-size: 32px;
+   		}
+    }
+}
