@@ -1,1 +1,13 @@
 /* Scss Document */
+
+// Variables - Guide Define Color & Space  
+@import 'variables/variables';
+
+// Mixins 
+@import 'mixins/mixins';
+
+/* Elements */
+@import 'elements/elements';
+
+/* Layouts */
+@import 'layouts/layouts';
